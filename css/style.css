@@ -164,7 +164,8 @@ nav {
 
 .dropdown:hover .dropitem,
 .dropdown:focus-within .dropitem {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Barra de pesquisa */
