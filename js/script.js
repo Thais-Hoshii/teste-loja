@@ -2,15 +2,37 @@
 
 function $(txt) { return document.querySelectorAll(txt); }
 
+window.onload = checkViewportWidth;
+window.onresize =  checkViewportWidth;
+
+function checkViewportWidth() {
+    let navItems = $(".nav-item");
+    let attr = "hidden";
+
+    if (window.innerWidth >= 600) {
+        navItems.forEach ( x => {
+            if (x.classList.contains(attr)) {
+                x.classList.remove(attr);
+            }
+        })
+    } else {
+        navItems.forEach ( x => {
+            if (!x.classList.contains(attr)) {
+                x.classList.add(attr);
+            }
+        })
+    }
+}
+
 function openTabs(name) {
     let options = $(name);
-    let c = "hidden";
+    let attr = "hidden";
 
     options.forEach( x => {
-        if (x.classList.contains(c)) {
-            x.classList.remove(c);
+        if (x.classList.contains(attr)) {
+            x.classList.remove(attr);
         } else {
-            x.classList.add(c);
+            x.classList.add(attr);
         }
     });
 }
