@@ -261,8 +261,12 @@ footer {
     max-height: 400px;
 }
 
+.product h2 {
+    font-weight: 700;
+}
+
 .product-img {
-    margin: auto;
+    margin: 0 auto .7rem;
     width: 36vw;
     max-width: 90%;
     height: 36vw;
