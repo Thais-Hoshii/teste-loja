@@ -1,10 +1,9 @@
 "use strict"
 
-function $(txt) { return document.querySelector(txt); }
-function all$(txt) { return document.querySelectorAll(txt); }
+function $(txt) { return document.querySelectorAll(txt); }
 
 function openTabs(name) {
-    let options = all$(name);
+    let options = $(name);
     let c = "hidden";
 
     options.forEach( x => {
