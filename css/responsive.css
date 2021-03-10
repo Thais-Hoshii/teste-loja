@@ -1,0 +1,115 @@
+@media only screen and (min-width: 600px) {
+    /* Cabeçalho */
+    header {
+        position: static;
+        background: var(--color-primary);
+        height: 8rem;
+        padding: 1rem 2rem;
+        display: grid;
+        grid-template-rows: 2rem auto; 
+        grid-template-columns: 30% auto 30%;
+    }
+
+    #header-phone {
+        grid-area: 1 / 1 / 1 / span 3;
+        text-align: right;
+        font-weight: 700;
+        color: var(--color-dark);
+    }
+
+    #header-logo {
+        height: 3rem;
+        grid-area: 2 / 1 / 2 / 1;
+    }
+
+    header .search {
+        grid-area: 2 / 2 / 2 / 2;
+    }
+
+    #header-others p {
+        grid-area: 2 / 3 / 2 / 3;
+        text-align: right;
+        margin-bottom: .5rem;
+    }
+    /* Menu de Navegação */
+    nav {
+        background: var(--color-light);
+    }
+
+    #nav-desktop {
+        text-align: center;
+    }
+
+    #nav-desktop .nav-item {
+        display: inline-block;
+        width: 120px;
+        text-align: center;
+    }
+
+    /* Barra de pesquisa */
+    body > .search {
+        display: none;
+    }
+
+    /* Rodapé */
+    #footer-info {
+        position: relative;
+        display: grid;
+        max-width: 900px;
+        margin: auto;
+        padding: 2rem 2rem;
+        grid-template-rows: 35% 35% 30%;
+        grid-template-columns: 32% auto 35%;
+    }
+
+    #footer-logo {
+        height: 2.5rem;
+        grid-area: 1 / 1 / span 2 / 1;
+        position: absolute;
+        top: 30%;
+        transform: translate(0, -50%);
+    }
+
+    #footer-links {
+        text-align: left;
+    }
+
+    #footer-links {
+        padding: 0;
+        grid-area: 1 / 2 / span 2 / 2;
+    }
+
+    #footer-customer {
+        grid-area: 1 / 3 / 1 / 3; 
+    }
+
+    #footer-customer h1 {
+        text-align: center;
+    }
+
+    #footer-social {
+        grid-area: 2 / 3 / 2 / 3
+    }
+
+    #footer-social h1 {
+        display: block;
+    }
+
+    #footer-copyright {
+        grid-area: 3 / 1 / 3 / span 3;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    #footer-newsletter {
+        text-align: center;
+    }
+
+    #footer-newsletter :is(label, div) {
+        display: inline-block;
+    }
+
+    #newsletter-input {
+        min-width: 400px;
+    }
+}

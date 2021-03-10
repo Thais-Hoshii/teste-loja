@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/catalogo.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Nome da Loja - Catálogo</title>
+</head>
+<body>
+    <main>
+        <div id="order-by">
+            <img id="filter-icon" class="icon" src="icons/icon-filter.svg" alt="Ícone de filtros" onclick="openTabs('#filter-tab')">
+            <select name="product-order" id="product-order">
+                <option value="best-sellers">Mais vendidos</option>
+                <option value="highest-rated">Melhor avaliados</option>
+                <option value="highest-price">Mais caros</option>
+                <option value="lowest-price">Mais baratos</option>
+                <option value="alphabet">De A - Z</option>
+            </select>
+            <label for="produt-order">Ordenar por:</label>
+        </div>
+        <aside id="filter-tab" class="hidden">
+            <h1>Filtros</h1>
+            <form id="filter-form">
+                <ul>
+                    <h2>Por tipo:</h2>
+                    <li><input type="checkbox" name="filter-type" id="type1" value="camiseta">
+                    <label for="type1">Camiseta</label></li>
+                    <li><input type="checkbox" name="filter-type" id="type2" value="vestido">
+                    <label for="type2">Vestido</label></li>
+                    <li><input type="checkbox" name="filter-type" id="type3" value="saia">
+                    <label for="type3">Saia</label></li>
+                    <li><input type="checkbox" name="filter-type" id="type4" value="bermuda">
+                    <label for="type4">Bermuda</label></li>                    
+                    <li><input type="checkbox" name="filter-type" id="type5" value="hoodie">
+                    <label for="type5">Hoodie</label></li>
+                    <li><input type="checkbox" name="filter-type" id="type6" value="macacao">
+                    <label for="type6">Macacão</label></li>
+                    <li><input type="checkbox" name="filter-type" id="type7" value="meias">
+                    <label for="type7">Meias</label></li>
+                    <li><input type="checkbox" name="filter-type" id="type8" value="sapatos">
+                    <label for="type8">Sapatos</label></li>
+                    <li><input type="checkbox" name="filter-type" id="type9" value="pijama">
+                    <label for="type9">Pijamas</label></li>
+                    <li><input type="checkbox" name="filter-type" id="type10" value="acessorio">
+                    <label for="type10">Acessório</label></li>
+                    <li><input type="checkbox" name="filter-type" id="type11" value="conjunto">
+                    <label for="type11">Conjunto</label></li>
+                </ul>
+                <ul>
+                    <h2>Por marca:</h2>
+                    <li><input type="checkbox" name="filter-brand" id="brand1" value="marca1">
+                    <label for="brand1">Marca 1</label></li>
+                    <li><input type="checkbox" name="filter-brand" id="brand2" value="marca2">
+                    <label for="brand2">Marca 2</label></li>
+                    <li><input type="checkbox" name="filter-brand" id="brand3" value="marca3">
+                    <label for="brand3">Marca 3</label></li>
+                </ul>
+                <ul>
+                    <h2>Por idade:</h2>
+                    <li><input type="checkbox" name="filter-age" id="age1" value="idade1">
+                    <label for="idade1">Até 1 ano</label></li>
+                    <li><input type="checkbox" name="filter-age" id="age2" value="idade2">
+                    <label for="idade2">De 1 a 3 anos</label></li>
+                    <li><input type="checkbox" name="filter-age" id="age3" value="idade3">
+                    <label for="idade3">De 3 a 5 anos</label></li>
+                    <li><input type="checkbox" name="filter-age" id="age4" value="idade4">
+                    <label for="idade4">De 5 a 7 anos</label></li>
+                    <li><input type="checkbox" name="filter-age" id="age5" value="idade5">
+                    <label for="idade5">De 7 a 10 anos</label></li>
+                    <li><input type="checkbox" name="filter-age" id="age6" value="idade6">
+                    <label for="idade6">Gestantes</label></li>
+                </ul>
+                <ul>
+                    <h2>Por cor:</h2>
+                    <li><input type="checkbox" name="filter-color" id="color1" value="amarelo">
+                    <label for="color1">Amarelo</label></li>
+                    <li><input type="checkbox" name="filter-color" id="color2" value="azul">
+                    <label for="color2">Azul</label></li>
+                    <li><input type="checkbox" name="filter-color" id="color3" value="branco">
+                    <label for="color3">Branco</label></li>
+                    <li><input type="checkbox" name="filter-color" id="color4" value="rosa">
+                    <label for="color4">Rosa</label></li>
+                    <li><input type="checkbox" name="filter-color" id="color5" value="verde">
+                    <label for="color5">Verde</label></li>
+                </ul>
+                <button id="filter-btn" type="button">Filtrar</button>
+            </form>
+        </aside>
+        <section id="catalog">
+            <div class="product">
+                <div class="product-img">
+                    <img src="" alt="Foto do Produto">
+                </div>
+                <h2>Nome do Produto</h2>
+                <p class="price">R$40,00</p>
+                <div class="product-colors">
+                </div>
+                <button type="button" class="btn">Comprar</button>
+            </div>
+            <div class="product">
+                <div class="product-img">
+                    <img src="" alt="Foto do Produto">
+                </div>
+                <h2>Nome do Produto</h2>
+                <p class="price">R$40,00</p>
+                <div class="product-colors">
+                </div>
+                <button type="button" class="btn">Comprar</button>
+            </div>
+            <div class="product">
+                <div class="product-img">
+                    <img src="" alt="Foto do Produto">
+                </div>
+                <h2>Nome do Produto</h2>
+                <p class="price">R$40,00</p>
+                <div class="product-colors">
+                </div>
+                <button type="button" class="btn">Comprar</button>
+            </div>
+            <div class="product">
+                <div class="product-img">
+                    <img src="" alt="Foto do Produto">
+                </div>
+                <h2>Nome do Produto</h2>
+                <p class="price">R$40,00</p>
+                <div class="product-colors">
+                </div>
+                <button type="button" class="btn">Comprar</button>
+            </div>
+            <div class="product">
+                <div class="product-img">
+                    <img src="" alt="Foto do Produto">
+                </div>
+                <h2>Nome do Produto</h2>
+                <p class="price">R$40,00</p>
+                <div class="product-colors">
+                </div>
+                <button type="button" class="btn">Comprar</button>
+            </div>
+            <div class="product">
+                <div class="product-img">
+                    <img src="" alt="Foto do Produto">
+                </div>
+                <h2>Nome do Produto</h2>
+                <p class="price">R$40,00</p>
+                <div class="product-colors">
+                </div>
+                <button type="button" class="btn">Comprar</button>
+            </div>
+            <div class="product">
+                <div class="product-img">
+                    <img src="" alt="Foto do Produto">
+                </div>
+                <h2>Nome do Produto</h2>
+                <p class="price">R$40,00</p>
+                <div class="product-colors">
+                </div>
+                <button type="button" class="btn">Comprar</button>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

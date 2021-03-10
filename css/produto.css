@@ -1,0 +1,110 @@
+@import "variables.css";
+
+main {
+    padding: 1rem;
+}
+
+#product-main,
+#product-info {
+    padding: .8rem 0;
+    background: var(--color-light);
+    box-shadow: 0 0 3px var(--color-shadow);
+}
+
+#product-main {
+    margin-bottom: 1rem;
+    text-align: center;
+    max-width: 1000px;
+}
+
+#product-thumbnails {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.thumbnail {
+    height: 60px;
+    width: 60px;
+    margin: 0 .4rem .4rem;
+    object-fit: cover;
+}
+
+#product-img {
+    margin-bottom: 1rem;
+    height: 360px;
+    width: 300px;
+    object-fit: cover;
+    background: var(--color-shadow);
+}
+
+#product-info {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.droptext button,
+.droptext p {
+    width: 80%;
+    padding: .5rem;
+    max-width: 800px;
+    margin: .8rem auto;
+}
+
+.droptext p {
+    text-align: justify;
+    display: none;
+    cursor: pointer;
+}
+
+.droptext button {
+    position: relative;
+    display: block;
+    background: var(--color-bg);
+}
+
+.droptext:focus-within .close-icon {
+    display: inline;
+}
+
+.droptext:focus-within .open-icon {
+    display: none;
+}
+
+.droptext:focus-within p {
+    display: block;
+}
+
+@media only screen and (min-width: 620px) {
+    #product-main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 1rem auto;
+    }
+
+    #product-thumbnails {
+        grid-column: 1 / span 1;
+        flex-direction:  column;
+        vertical-align: top;
+        align-content: flex-start;
+    }
+
+    .thumbnail {
+        height: 80px;
+        width: 80px;
+    }
+
+    #product-img {
+        height: 600px;
+        width: 500px;
+        grid-column: 2 / span 1;
+    }
+
+    #product-options {
+        padding: 0 .8rem;
+        margin: 0 auto;
+        text-align: left;
+    }
+}

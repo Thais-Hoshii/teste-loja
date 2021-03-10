@@ -1,0 +1,86 @@
+@import "variables.css";
+
+/* Conteudo principal */
+#banner-main {
+    position: relative;
+    width: 100%;
+    background: url(../img/bebe1.jpg);
+    background-size: 100%;
+}
+
+#banner-main div {
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+    background: var(--color-emphasis);
+    box-shadow: 0 2px 3px var(--color-shadow);
+}
+
+#banner-main img {
+    vertical-align: top;
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    max-height: 500px;
+    object-fit: cover;
+    opacity: 80%;
+}
+
+#banner-main h2 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-family: "Coiny", cursive;
+    font-size: 18pt;
+    color: var(--color-light);
+    text-shadow: 0 0 7px var(--color-font);
+}
+
+#banner-main p {
+    padding-top: 1rem;
+    font-size: 10pt;
+    text-align: center;
+    background: var(--color-bg)
+}
+
+.section-products {
+    margin: 3rem 0 4rem;
+}
+
+.section-products h1 {
+    font-family: "Coiny", cursive;
+    text-transform: uppercase;
+    font-size: 14pt;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    margin: 0 2rem;
+    scrollbar-width: thin;
+}
+
+/* Alterando barra de rolagem para Chrome, Edge e Safari */
+.product-list::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.product-list::-webkit-scrollbar-corner {
+    display: none;
+}
+
+.product-list::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+    border-radius: 2px;
+}
+
+
+@media only screen and (min-width: 600px) {
+    #banner-main h2 {
+        font-size: 26pt;
+    }
+}

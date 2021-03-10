@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="78" height="69" viewBox="0 0 78 69">
+  <g id="icon-filter" transform="translate(-779.5 130)">
+    <line id="Linha_1" data-name="Linha 1" x2="75" transform="translate(781 -121)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="3"/>
+    <line id="Linha_2" data-name="Linha 2" x2="75" transform="translate(781 -96)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="3"/>
+    <line id="Linha_3" data-name="Linha 3" x2="75" transform="translate(781 -70)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="3"/>
+    <g id="Elipse_58" data-name="Elipse 58" transform="translate(793 -105)" fill="#fff" stroke="#707070" stroke-width="2">
+      <circle cx="8.5" cy="8.5" r="8.5" stroke="none"/>
+      <circle cx="8.5" cy="8.5" r="7.5" fill="none"/>
+    </g>
+    <g id="Elipse_60" data-name="Elipse 60" transform="translate(810 -78)" fill="#fff" stroke="#707070" stroke-width="2">
+      <circle cx="8.5" cy="8.5" r="8.5" stroke="none"/>
+      <circle cx="8.5" cy="8.5" r="7.5" fill="none"/>
+    </g>
+    <g id="Elipse_59" data-name="Elipse 59" transform="translate(828 -130)" fill="#fff" stroke="#707070" stroke-width="2">
+      <circle cx="8.5" cy="8.5" r="8.5" stroke="none"/>
+      <circle cx="8.5" cy="8.5" r="7.5" fill="none"/>
+    </g>
+  </g>
+</svg>

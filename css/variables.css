@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap&family=Quicksand:wght@400;700&display=swap');
+
+:root {
+    --color-primary: #bed9eb;
+    --color-emphasis: #e97f29;
+    --color-light: #fefefe;
+    --color-dark: #435f8a;
+    --color-bg: #eef4f7;
+    --color-font: #313131;
+    --color-shadow: #afaeac;
+}

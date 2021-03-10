@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/produto.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Nome da Loja - Produto</title>
+</head>
+<body>
+    <main>
+        <section id="product-main">
+            <div id="product-thumbnails">
+                <img src="img/macacao0.png" alt="Thumbnail 1 do produto" class="thumbnail">
+                <img src="img/macacao1.png" alt="Thumbnail 2 do produto" class="thumbnail">
+                <img src="img/macacao2.png" alt="Thumbnail 3 do produto" class="thumbnail">
+                <img src="img/macacao3.png" alt="Thumbnail 4 do produto" class="thumbnail">
+            </div>
+            <img id="product-img" src="img/macacao0.png" alt="Imagem do produto">
+            <div id="product-options">
+                <h1>Produto 1</h1>
+                <h2>Marca 01234567890</h2>
+                <div id="product-rating"></div>
+                <form id="size-options">
+                    <label for="size-rn">
+                        <input type="radio" id="size-rn" name="size" value="size-rn"></input>
+                        <span>RN</span>
+                    </label>
+                    <label for="size-p">
+                        <input type="radio" id="size-p" name="size" value="size-p"></input>
+                        <span>P</span>
+                    </label>
+                    <label for="size-m">
+                        <input type="radio" id="size-m" name="size" value="size-m"></input>
+                        <span>M</span>
+                    </label>
+                    <label for="size-g">
+                        <input type="radio" id="size-g" name="size" value="size-g"></input>
+                        <span>G</span>
+                    </label>
+                </form>
+                <form id="color-options">
+                    <input type="radio" id="color-0" name="color" value="color-0"></input>
+                    <input type="radio" id="color-1" name="color" value="color-1"></input>
+                    <input type="radio" id="color-2" name="color" value="color-2"></input>
+                    <input type="radio" id="color-3" name="color" value="color-3"></input>
+                </form>
+                <p class="price">R$ 40,00</p>
+                <form id="product-quantity">
+                    <label for="quantity">Quant:</label>
+                    <input type="number" name="quantity" id="quantity">
+                </form>
+                <button type="button" class="btn">Comprar</button>
+            </div>
+        </section>
+        <section id="product-info">
+            <div id="product-description" class="droptext">
+                <button type="button">Descrição
+                    <img class="drop-icon open-icon" src="icons/icon-open.svg" alt="Ícone de abrir abas">
+                    <img class="drop-icon close-icon" src="icons/icon-close.svg" alt="Ícone de fechar abas">
+                </button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div id="product-composition" class="droptext">
+                <button type="button">Composição
+                    <img class="drop-icon open-icon" src="icons/icon-open.svg" alt="Ícone de abrir abas">
+                    <img class="drop-icon close-icon" src="icons/icon-close.svg" alt="Ícone de fechar abas">
+                </button>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div id="product-reviews" class="droptext">
+                <button type="button">Avaliação dos Usuários
+                    <img class="drop-icon open-icon" src="icons/icon-open.svg" alt="Ícone de abrir abas">
+                    <img class="drop-icon close-icon" src="icons/icon-close.svg" alt="Ícone de fechar abas">
+                </button>
+                <p></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
