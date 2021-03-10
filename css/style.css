@@ -99,13 +99,12 @@ nav {
 }
 
 #nav-search .search {
-    vertical-align: bottom;
-    margin: 0;
-    float: right;
+    display: none;
 }
 
-.nav-logo {
-    margin: auto;
+#nav-search {
+    width: 100%;
+    text-align: center;
 }
 
 #nav-others {
@@ -274,5 +273,25 @@ footer {
     max-width: 90%;
     height: 36vw;
     max-height: 70%;
-    background: var(--color-emphasis);
+    background: var(--color-shadow);
+}
+
+/* Alterando barra de rolagem para Chrome, Edge, Opera e Safari */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-corner {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+    border-radius: 2px;
+}
+
+/* Alterando barra de rolagem para Firefox */ 
+.thin-scrollbar {
+    scrollbar-width: thin;
 }

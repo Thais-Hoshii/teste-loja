@@ -60,24 +60,7 @@
     flex-direction: row;
     overflow: scroll;
     margin: 0 2rem;
-    scrollbar-width: thin;
 }
-
-/* Alterando barra de rolagem para Chrome, Edge e Safari */
-.product-list::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-}
-
-.product-list::-webkit-scrollbar-corner {
-    display: none;
-}
-
-.product-list::-webkit-scrollbar-thumb {
-    background-color: lightgray;
-    border-radius: 2px;
-}
-
 
 @media only screen and (min-width: 600px) {
     #banner-main h2 {

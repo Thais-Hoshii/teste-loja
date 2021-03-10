@@ -46,6 +46,13 @@
         text-align: center;
     }
 
+    #nav-search .search {
+        display: inline-block;
+        width: 60%;
+        margin: 0 0 0 1rem;
+        vertical-align: bottom;
+    }
+
     /* Barra de pesquisa */
     body > .search {
         display: none;
