@@ -14,7 +14,7 @@
     <header>
         <div id="header-content">
             <p id="header-phone">Atendimento: 0800 123 4567</p>
-            <img id="header-logo" src="icons/logo.svg" alt="Logo da marca">
+            <a href="index.html"><img id="header-logo" src="icons/logo.svg" alt="Logo da marca"></a>
             <!-- Barra de pesquisa em telas maiores-->
             <div>
                 <div class="search input-field" role="search">
@@ -34,7 +34,7 @@
         <div id="nav-mobile">
             <img id="menu-btn" class="icon" src="icons/icon-menu.svg" alt="Ícone de menu">
             <div id="nav-search">
-                <img class="icon" src="icons/logo.svg" alt="Logo da marca">
+                <a href="index.html"><img class="icon" src="icons/logo.svg" alt="Logo da marca"></a>
                 <div class="search input-field" role="search">
                     <input class="search-input input-component" type="text" placeholder="O que você procura?">
                     <button class="search-btn input-component" type="button"><img src="icons/icon-search.svg" alt="Ícone de busca"></button>
@@ -52,13 +52,13 @@
                     <img class="drop-icon close-icon hidden" src="icons/icon-close.svg" alt="Ícone de fechar abas">
                 </button>
                 <div class="dropitem hidden">
-                    <a href="#" class="nav-sub">Ver todos</a>
-                    <a href="#" class="nav-sub">Roupas</a>
-                    <a href="#" class="nav-sub">Calçados</a>
-                    <a href="#" class="nav-sub">Meias</a>
-                    <a href="#" class="nav-sub">Pijamas</a>
-                    <a href="#" class="nav-sub">Acessórios</a>
-                    <a href="#" class="nav-sub">Enxovais</a>
+                    <a href="catalogo.html" class="nav-sub">Ver todos</a>
+                    <a href="catalogo.html" class="nav-sub">Roupas</a>
+                    <a href="catalogo.html" class="nav-sub">Calçados</a>
+                    <a href="catalogo.html" class="nav-sub">Meias</a>
+                    <a href="catalogo.html" class="nav-sub">Pijamas</a>
+                    <a href="catalogo.html" class="nav-sub">Acessórios</a>
+                    <a href="catalogo.html" class="nav-sub">Enxovais</a>
                 </div>
             </div>
             <div class="dropdown">
@@ -67,13 +67,13 @@
                     <img class="drop-icon close-icon hidden" src="icons/icon-close.svg" alt="Ícone de fechar abas">
                 </button>
                 <div class="dropitem hidden">
-                    <a href="#" class="nav-sub">Ver todos</a>
-                    <a href="#" class="nav-sub">Roupas</a>
-                    <a href="#" class="nav-sub">Calçados</a>
-                    <a href="#" class="nav-sub">Meias</a>
-                    <a href="#" class="nav-sub">Pijamas</a>
-                    <a href="#" class="nav-sub">Acessórios</a>
-                    <a href="#" class="nav-sub">Conjuntos</a>
+                    <a href="catalogo.html" class="nav-sub">Ver todos</a>
+                    <a href="catalogo.html" class="nav-sub">Roupas</a>
+                    <a href="catalogo.html" class="nav-sub">Calçados</a>
+                    <a href="catalogo.html" class="nav-sub">Meias</a>
+                    <a href="catalogo.html" class="nav-sub">Pijamas</a>
+                    <a href="catalogo.html" class="nav-sub">Acessórios</a>
+                    <a href="catalogo.html" class="nav-sub">Conjuntos</a>
                 </div>
             </div>
             <div class="dropdown">
@@ -82,10 +82,10 @@
                     <img class="drop-icon close-icon hidden" src="icons/icon-close.svg" alt="Ícone de fechar abas">
                 </button>
                 <div class="dropitem hidden">
-                    <a href="#" class="nav-sub">Ver todos</a>
-                    <a href="#" class="nav-sub">Roupas</a>
-                    <a href="#" class="nav-sub">Pijamas</a>
-                    <a href="#" class="nav-sub">Lingerie</a>
+                    <a href="catalogo.html" class="nav-sub">Ver todos</a>
+                    <a href="catalogo.html" class="nav-sub">Roupas</a>
+                    <a href="catalogo.html" class="nav-sub">Pijamas</a>
+                    <a href="catalogo.html" class="nav-sub">Lingerie</a>
                 </div>
             </div>
         </div>
@@ -97,7 +97,7 @@
         <button class="search-btn input-component" type="button"><img src="icons/icon-search.svg" alt="Ícone de busca"></button>
     </div>
 
-    <!-- Conteúdo da página de produto -->
+    <!-- Conteúdo da página de catálogo -->
     <main>
         <div id="order-by">
             <img id="filter-icon" class="icon" src="icons/icon-filter.svg" alt="Ícone de filtros">
@@ -110,6 +110,7 @@
             </select>
             <label for="produt-order">Ordenar por:</label>
         </div>
+        <!-- Aba de filtros -->
         <aside id="filter-tab" class="hidden">
             <h1>Filtros</h1>
             <form id="filter-form">
@@ -178,76 +179,91 @@
                 <button id="filter-btn" type="button">Filtrar</button>
             </form>
         </aside>
+        <!-- Catálogo dos produtos -->
         <section id="catalog">
             <div class="product">
-                <div class="product-img">
-                    <img src="" alt="Foto do Produto">
-                </div>
-                <h2>Nome do Produto</h2>
-                <p class="price">R$40,00</p>
-                <div class="product-colors">
-                </div>
-                <button type="button" class="btn">Comprar</button>
+                <a href="produto.html">
+                    <div class="product-img">
+                        <img src="" alt="Foto do Produto">
+                    </div>
+                    <h2>Nome do Produto</h2>
+                    <p class="price">R$40,00</p>
+                    <div class="product-colors">
+                    </div>
+                    <button type="button" class="btn">Comprar</button>
+                </a>
             </div>
             <div class="product">
-                <div class="product-img">
-                    <img src="" alt="Foto do Produto">
-                </div>
-                <h2>Nome do Produto</h2>
-                <p class="price">R$40,00</p>
-                <div class="product-colors">
-                </div>
-                <button type="button" class="btn">Comprar</button>
+                <a href="produto.html">
+                    <div class="product-img">
+                        <img src="" alt="Foto do Produto">
+                    </div>
+                    <h2>Nome do Produto</h2>
+                    <p class="price">R$40,00</p>
+                    <div class="product-colors">
+                    </div>
+                    <button type="button" class="btn">Comprar</button>
+                </a>
             </div>
             <div class="product">
-                <div class="product-img">
-                    <img src="" alt="Foto do Produto">
-                </div>
-                <h2>Nome do Produto</h2>
-                <p class="price">R$40,00</p>
-                <div class="product-colors">
-                </div>
-                <button type="button" class="btn">Comprar</button>
+                <a href="produto.html">
+                    <div class="product-img">
+                        <img src="" alt="Foto do Produto">
+                    </div>
+                    <h2>Nome do Produto</h2>
+                    <p class="price">R$40,00</p>
+                    <div class="product-colors">
+                    </div>
+                    <button type="button" class="btn">Comprar</button>
+                </a>
             </div>
             <div class="product">
-                <div class="product-img">
-                    <img src="" alt="Foto do Produto">
-                </div>
-                <h2>Nome do Produto</h2>
-                <p class="price">R$40,00</p>
-                <div class="product-colors">
-                </div>
-                <button type="button" class="btn">Comprar</button>
+                <a href="produto.html">
+                    <div class="product-img">
+                        <img src="" alt="Foto do Produto">
+                    </div>
+                    <h2>Nome do Produto</h2>
+                    <p class="price">R$40,00</p>
+                    <div class="product-colors">
+                    </div>
+                    <button type="button" class="btn">Comprar</button>
+                </a>
             </div>
             <div class="product">
-                <div class="product-img">
-                    <img src="" alt="Foto do Produto">
-                </div>
-                <h2>Nome do Produto</h2>
-                <p class="price">R$40,00</p>
-                <div class="product-colors">
-                </div>
-                <button type="button" class="btn">Comprar</button>
+                <a href="produto.html">
+                    <div class="product-img">
+                        <img src="" alt="Foto do Produto">
+                    </div>
+                    <h2>Nome do Produto</h2>
+                    <p class="price">R$40,00</p>
+                    <div class="product-colors">
+                    </div>
+                    <button type="button" class="btn">Comprar</button>
+                </a>
             </div>
             <div class="product">
-                <div class="product-img">
-                    <img src="" alt="Foto do Produto">
-                </div>
-                <h2>Nome do Produto</h2>
-                <p class="price">R$40,00</p>
-                <div class="product-colors">
-                </div>
-                <button type="button" class="btn">Comprar</button>
+                <a href="produto.html">
+                    <div class="product-img">
+                        <img src="" alt="Foto do Produto">
+                    </div>
+                    <h2>Nome do Produto</h2>
+                    <p class="price">R$40,00</p>
+                    <div class="product-colors">
+                    </div>
+                    <button type="button" class="btn">Comprar</button>
+                </a>
             </div>
             <div class="product">
-                <div class="product-img">
-                    <img src="" alt="Foto do Produto">
-                </div>
-                <h2>Nome do Produto</h2>
-                <p class="price">R$40,00</p>
-                <div class="product-colors">
-                </div>
-                <button type="button" class="btn">Comprar</button>
+                <a href="produto.html">
+                    <div class="product-img">
+                        <img src="" alt="Foto do Produto">
+                    </div>
+                    <h2>Nome do Produto</h2>
+                    <p class="price">R$40,00</p>
+                    <div class="product-colors">
+                    </div>
+                    <button type="button" class="btn">Comprar</button>
+                </a>
             </div>
         </section>
     </main>

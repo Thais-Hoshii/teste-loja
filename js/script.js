@@ -29,9 +29,11 @@ $(".nav-item").forEach( (x, i) => {
         return openTabs(".dropitem", i);
     });
     x.addEventListener("focusout", () => {
-        if (!n.classList.contains("hidden")) {
-            n.classList.add("hidden");
-        }
+        setTimeout(() => {
+            if (!n.classList.contains("hidden")) {
+                n.classList.add("hidden");
+            }
+        }, 100);
     });
 })
 
