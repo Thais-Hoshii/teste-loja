@@ -38,6 +38,29 @@ main {
     background: var(--color-shadow);
 }
 
+#product-options h1 {
+    font-size: 18pt;
+}
+
+#product-options p {
+    margin: 1rem 0;
+}
+
+.options {
+    margin: .7rem 0;
+}
+
+.options input {
+    margin: .3rem;
+}
+
+input[type=number] {
+    border: 1px solid var(--color-shadow);
+    width: 3rem;
+    padding: .2rem;
+    margin: .5rem;
+}
+
 #product-info {
     width: 100%;
     max-width: 1000px;
@@ -54,7 +77,6 @@ main {
 
 .droptext p {
     text-align: justify;
-    display: none;
     cursor: pointer;
 }
 
@@ -62,14 +84,6 @@ main {
     position: relative;
     display: block;
     background: var(--color-bg);
-}
-
-.droptext:focus-within .close-icon {
-    display: inline;
-}
-
-.droptext:focus-within .open-icon {
-    display: none;
 }
 
 .droptext:focus-within p {

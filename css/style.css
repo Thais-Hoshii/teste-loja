@@ -52,6 +52,10 @@ button {
     border-radius: 15px;
 }
 
+.btn:hover {
+    
+}
+
 .price {
     color: var(--color-dark);
     font-weight: 700;
@@ -255,6 +259,10 @@ footer {
     height: 36vw;
     max-height: 70%;
     background: var(--color-shadow);
+}
+
+.product:hover {
+    border: 2px solid var(--color-shadow);
 }
 
 /* Alterando barra de rolagem para Chrome, Edge, Opera e Safari */

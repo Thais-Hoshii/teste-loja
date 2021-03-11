@@ -111,7 +111,8 @@
                 <h1>Produto 1</h1>
                 <h2>Marca 01234567890</h2>
                 <div id="product-rating"></div>
-                <form id="size-options">
+                <p>Por: <span class="price">R$ 40,00</span></p>
+                <form id="size-options" class="options">
                     <label for="size-rn">
                         <input type="radio" id="size-rn" name="size" value="size-rn"></input>
                         <span>RN</span>
@@ -129,13 +130,12 @@
                         <span>G</span>
                     </label>
                 </form>
-                <form id="color-options">
+                <form id="color-options" class="options">
                     <input type="radio" id="color-0" name="color" value="color-0"></input>
                     <input type="radio" id="color-1" name="color" value="color-1"></input>
                     <input type="radio" id="color-2" name="color" value="color-2"></input>
                     <input type="radio" id="color-3" name="color" value="color-3"></input>
                 </form>
-                <p class="price">R$ 40,00</p>
                 <form id="product-quantity">
                     <label for="quantity">Quant:</label>
                     <input type="number" name="quantity" id="quantity">
@@ -149,21 +149,21 @@
                     <img class="drop-icon open-icon" src="icons/icon-open.svg" alt="Ícone de abrir abas">
                     <img class="drop-icon close-icon hidden" src="icons/icon-close.svg" alt="Ícone de fechar abas">
                 </button>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
             <div id="product-composition" class="droptext">
                 <button type="button">Composição
                     <img class="drop-icon open-icon" src="icons/icon-open.svg" alt="Ícone de abrir abas">
                     <img class="drop-icon close-icon hidden" src="icons/icon-close.svg" alt="Ícone de fechar abas">
                 </button>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p class="hidden">Lorem ipsum dolor sit amet.</p>
             </div>
             <div id="product-reviews" class="droptext">
                 <button type="button">Avaliação dos Usuários
                     <img class="drop-icon open-icon" src="icons/icon-open.svg" alt="Ícone de abrir abas">
                     <img class="drop-icon close-icon hidden" src="icons/icon-close.svg" alt="Ícone de fechar abas">
                 </button>
-                <p></p>
+                <p class="hidden"></p>
             </div>
         </section>
     </main>
@@ -205,5 +205,14 @@
     </footer>
     
     <script src="js/script.js"></script>
+    <script>
+        $(".droptext").forEach( (x, i) => {
+            x.addEventListener("click", () => {
+                openTabs(".droptext .open-icon", i);
+                openTabs(".droptext .close-icon", i);
+                openTabs(".droptext p", i);
+            })
+        })
+    </script>
 </body>
 </html>
