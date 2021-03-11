@@ -53,7 +53,7 @@ button {
 }
 
 .btn:hover {
-    
+    opacity: 80%;
 }
 
 .price {
@@ -201,10 +201,8 @@ footer {
 }
 
 #newsletter-btn {
-    font-weight: 600;
+    width: auto;
     border-radius: 0 6px 6px 0;
-    background: var(--color-emphasis);
-    color: var(--color-light);
 }
 
 #footer-info {
