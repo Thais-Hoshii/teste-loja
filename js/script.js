@@ -1,13 +1,19 @@
 "use strict"
+
+let headerBottom = $("header")[0].offsetTop + $("header")[0].offsetHeight;
+
 // Atalho para selecionar um conjunto de elementos
 function $(txt) { return document.querySelectorAll(txt); }
 
 // Quando iniciar a página ou mudar comprimento da tela, usar função
-window.onresize = toggleNavBar;
+window.onresize = checkWidth;
 window.addEventListener("load", () => {
-    toggleNavBar();
+    checkWidth();
     if (window.innerWidth >= 600) {
         $("#nav-mobile")[0].classList.add("hidden");
+        if (window.pageYOffset >= headerBottom) {
+            checkViewportTop();
+        }
     }
 });
 
@@ -30,30 +36,33 @@ $(".nav-item").forEach( (x, i) => {
 })
 
 // Faz com que a barra de navegação mude quando o viewport passa do cabeçalho
-let headerBottom = $("header")[0].offsetTop + $("header")[0].offsetHeight;
+window.addEventListener("scroll", () => { return checkViewportTop() });
 
-window.addEventListener("scroll", () => {
+
+// Função para checar o topo da tela e se passar do cabeçalho, mudar barra de navegação
+function checkViewportTop() {
     let base = window.pageYOffset;
     let mobile = $("#nav-mobile")[0];
     let desktop = $("#nav-menu")[0];
+    let attr = "hidden";
 
     if (window.innerWidth >= 600) {
         if (base >= headerBottom) {
-            mobile.classList.remove("hidden");
-            if (!desktop.classList.contains("hidden")) {
-                desktop.classList.add("hidden");
+            mobile.classList.remove(attr);
+            if (!desktop.classList.contains(attr)) {
+                desktop.classList.add(attr);
             }
         } else {
-            mobile.classList.add("hidden");
-            if (desktop.classList.contains("hidden")) {
-                desktop.classList.remove("hidden");
+            mobile.classList.add(attr);
+            if (desktop.classList.contains(attr)) {
+                desktop.classList.remove(attr);
             }
         }
     }
-});
+}
 
 // Função para ligar/desligar barra de navegação para telas com width >= 600px
-function toggleNavBar() {
+function checkWidth() {
     let navItems = $("#nav-menu");
     let attr = "hidden";
 
