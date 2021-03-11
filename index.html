@@ -101,11 +101,12 @@
     <main>
         <!-- Banner principal -->
         <div id="banner-main" role="banner">
-            <div>
-                <img id="banner-img" src="img/bebe1.jpg" alt="Imagem banner 1">
-            </div>
-            <a href="catalogo.html"><h2>Linha para Bebês</h2></a>
-            <p>&#9899; &#9898; &#9898;</p>
+            <a href="catalogo.html">
+                <div id="banner-img">
+                </div>
+                <h2 id="banner-title">Linha para Bebês</h2>
+            </a>
+            <p></p>
         </div>
         <!-- Seção dos produtos mais vendidos -->
         <section id="mais-vendidos" class="section-products">
@@ -330,5 +331,22 @@
     </footer>
     
     <script src="js/script.js"></script>
+    <script>
+        let banners = ['bebe1.jpg', 'crianca2.jpg', 'gestante1.jpg'];
+        let titles = ["Bebês", "Crianças", "Gestantes"];
+        let whiteDot = "&#9898;";
+        let blackDot = "&#9899;";
+        function changeBanner(i) {
+            setInterval( () => {
+                $("#banner-img")[0].style.backgroundImage = "url(./img/" + banners[i] + ")";
+                $("#banner-title")[0].innerText = "Linha para " + titles[i]
+                i++;
+                if (i >= banners.length) {
+                    i = 0
+                }
+            }, 4000);
+        }
+        changeBanner(1);
+    </script>
 </body>
 </html>

@@ -5,29 +5,25 @@
     position: relative;
     margin-top: 2rem;
     width: 100%;
-    background: url(../img/bebe1.jpg);
-    background-size: 100%;
-}
-
-#banner-main div {
-    max-width: 1000px;
-    overflow: hidden;
-    margin: auto;
     background: var(--color-emphasis);
-    box-shadow: 0 2px 3px var(--color-shadow);
 }
 
 #banner-img {
     vertical-align: top;
+    margin: auto;
     width: 100%;
-    height: auto;
+    opacity: 80%;
+    height: 45vw;
     max-width: 1000px;
     max-height: 500px;
     object-fit: cover;
-    opacity: 80%;
+    box-sizing: border-box;
+    background-size: 100%;
+    background-image: url(../img/bebe1.jpg);
+    background-position: 50% 50%;
 }
 
-#banner-main h2 {
+#banner-title {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -62,6 +58,9 @@
     overflow: scroll;
     margin: 0 2rem;
 }
+
+/* Animação */
+
 
 @media only screen and (min-width: 600px) {
     #banner-main h2 {
