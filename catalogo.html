@@ -12,7 +12,7 @@
 <body>
     <main>
         <div id="order-by">
-            <img id="filter-icon" class="icon" src="icons/icon-filter.svg" alt="Ícone de filtros" onclick="openTabs('#filter-tab')">
+            <img id="filter-icon" class="icon" src="icons/icon-filter.svg" alt="Ícone de filtros">
             <select name="product-order" id="product-order">
                 <option value="best-sellers">Mais vendidos</option>
                 <option value="highest-rated">Melhor avaliados</option>
@@ -164,5 +164,10 @@
         </section>
     </main>
     <script src="js/script.js"></script>
+    <script>
+        $("#filter-icon")[0].addEventListener("click", () => {
+            return openTabs("#filter-tab");
+        })
+    </script>
 </body>
 </html>

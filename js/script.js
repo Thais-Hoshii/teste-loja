@@ -24,15 +24,23 @@ function checkViewportWidth() {
     }
 }
 
-function openTabs(name) {
-    let options = $(name);
-    let attr = "hidden";
+function openTabs(name, i) {
+    let arr = $(name);
+    let c = "hidden";
 
-    options.forEach( x => {
-        if (x.classList.contains(attr)) {
-            x.classList.remove(attr);
+    if (i === undefined) {
+        arr.forEach( x => {
+            if (x.classList.contains(c)) {
+                x.classList.remove(c);
+            } else {
+                x.classList.add(c);
+            }
+        });
+    } else {
+        if (arr[i].classList.contains(c)) {
+            arr[i].classList.remove(c);
         } else {
-            x.classList.add(attr);
+            arr[i].classList.add(c);
         }
-    });
+    }
 }

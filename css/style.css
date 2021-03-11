@@ -60,7 +60,7 @@ button {
 
 .hidden {
     position: absolute !important;
-    top: -999rem;
+    top: -999rem !important;
 }
 
 .input-field {
@@ -143,21 +143,7 @@ nav {
     width: 20px;
 }
 
-.dropdown .dropitem,
-.close-icon {
-    display: none;
-}
-
-.dropdown:focus-within .close-icon {
-    display: inline;
-}
-
-.dropdown:focus-within .open-icon {
-    display: none;
-}
-
-.dropdown:hover .dropitem,
-.dropdown:focus-within .dropitem {
+.dropitem {
     display: flex;
     flex-direction: column;
 }

@@ -30,7 +30,7 @@
     <!-- Barra de navegação -->
     <nav>
         <div id="nav-mobile">
-            <img class="icon menu-btn" src="icons/icon-menu.svg" alt="Ícone de menu" onclick="openTabs('.nav-item')">
+            <img id="menu-btn" class="icon" src="icons/icon-menu.svg" alt="Ícone de menu">
             <div id="nav-search">
                 <img class="icon" src="icons/logo.svg" alt="Logo da marca">
                 <div class="search input-field" role="search">
@@ -47,9 +47,9 @@
             <div class="dropdown">
                 <button class="nav-item" type="button">Bebês
                     <img class="drop-icon open-icon" src="icons/icon-open.svg" alt="Ícone de abrir abas">
-                    <img class="drop-icon close-icon" src="icons/icon-close.svg" alt="Ícone de fechar abas">
+                    <img class="drop-icon close-icon hidden" src="icons/icon-close.svg" alt="Ícone de fechar abas">
                 </button>
-                <div class="dropitem">
+                <div class="dropitem hidden">
                     <a href="#" class="nav-sub">Ver todos</a>
                     <a href="#" class="nav-sub">Roupas</a>
                     <a href="#" class="nav-sub">Calçados</a>
@@ -62,9 +62,9 @@
             <div class="dropdown">
                 <button class="nav-item" type="button">Crianças
                     <img class="drop-icon open-icon" src="icons/icon-open.svg" alt="Ícone de abrir abas">
-                    <img class="drop-icon close-icon" src="icons/icon-close.svg" alt="Ícone de fechar abas">
+                    <img class="drop-icon close-icon hidden" src="icons/icon-close.svg" alt="Ícone de fechar abas">
                 </button>
-                <div class="dropitem">
+                <div class="dropitem hidden">
                     <a href="#" class="nav-sub">Ver todos</a>
                     <a href="#" class="nav-sub">Roupas</a>
                     <a href="#" class="nav-sub">Calçados</a>
@@ -77,9 +77,9 @@
             <div class="dropdown">
                 <button class="nav-item" type="button">Gestantes
                     <img class="drop-icon open-icon" src="icons/icon-open.svg" alt="Ícone de abrir abas">
-                    <img class="drop-icon close-icon" src="icons/icon-close.svg" alt="Ícone de fechar abas">
+                    <img class="drop-icon close-icon hidden" src="icons/icon-close.svg" alt="Ícone de fechar abas">
                 </button>
-                <div class="dropitem">
+                <div class="dropitem hidden">
                     <a href="#" class="nav-sub">Ver todos</a>
                     <a href="#" class="nav-sub">Roupas</a>
                     <a href="#" class="nav-sub">Pijamas</a>
@@ -294,5 +294,21 @@
     </footer>
     
     <script src="js/script.js"></script>
+    <script>
+        $("#menu-btn")[0].addEventListener("click", () => { return openTabs(".nav-item"); });
+        $(".nav-item").forEach( (x, i) => {
+            let n = $(".dropitem")[i];
+            x.addEventListener("click",  () => {
+                openTabs(".open-icon", i);
+                openTabs(".close-icon", i);
+                return openTabs(".dropitem", i);
+            });
+            x.addEventListener("focusout", () => {
+                if (!n.classList.contains("hidden")) {
+                    n.classList.add("hidden");
+                }
+            });
+        })
+    </script>
 </body>
 </html>
