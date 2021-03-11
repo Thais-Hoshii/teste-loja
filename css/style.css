@@ -148,12 +148,10 @@ nav {
     display: none;
 }
 
-.dropdown:hover .close-icon,
 .dropdown:focus-within .close-icon {
     display: inline;
 }
 
-.dropdown:hover .open-icon,
 .dropdown:focus-within .open-icon {
     display: none;
 }
