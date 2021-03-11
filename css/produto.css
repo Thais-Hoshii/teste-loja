@@ -87,6 +87,7 @@ main {
 }
 
 input[type="radio"]:disabled + label {
+    text-decoration: line-through;
     cursor: default;
     opacity: 60%;
 }
