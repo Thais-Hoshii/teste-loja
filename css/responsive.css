@@ -3,16 +3,21 @@
     header {
         position: static;
         background: var(--color-primary);
-        height: 8rem;
+        height: 7rem;
         padding: 1rem 2rem;
+    }
+
+    #header-content {
         display: grid;
         grid-template-rows: 2rem auto; 
         grid-template-columns: 30% auto 30%;
+        margin: auto;
+        max-width: 1200px;
     }
 
     #header-phone {
         grid-area: 1 / 1 / 1 / span 3;
-        text-align: right;
+        text-align: center;
         font-weight: 700;
         color: var(--color-dark);
     }
@@ -22,7 +27,7 @@
         grid-area: 2 / 1 / 2 / 1;
     }
 
-    header .search {
+    #header-content .search {
         grid-area: 2 / 2 / 2 / 2;
     }
 
