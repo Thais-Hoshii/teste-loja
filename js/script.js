@@ -6,6 +6,7 @@ function $(txt) { return document.querySelectorAll(txt); }
 window.onload = toggleNavBar;
 window.onresize = toggleNavBar;
 
+// Adicionando funções para eventos relacionados a menus dropdown
 $("#menu-btn")[0].addEventListener("click", () => { return openTabs(".nav-item"); });
 $(".nav-item").forEach( (x, i) => {
     let n = $(".dropitem")[i];
