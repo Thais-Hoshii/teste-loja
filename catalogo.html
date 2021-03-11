@@ -10,6 +10,92 @@
     <title>Nome da Loja - Catálogo</title>
 </head>
 <body>
+    <!-- Cabeçalho -->
+    <header>
+        <p id="header-phone">Atendimento: 0800 123 4567</p>
+        <img id="header-logo" src="icons/logo.svg" alt="Logo da marca">
+        <!-- Barra de pesquisa em telas maiores-->
+        <div>
+            <div class="search input-field" role="search">
+                <input class="search-input input-component" type="text" placeholder="O que você procura?">
+                <button class="search-btn input-component" type="button"><img src="icons/icon-search.svg" alt="Ícone de busca"></button>
+            </div>
+        </div>
+        <div id="header-others">
+            <p>Minha conta <img class="icon" src="icons/icon-account.svg" alt="Ícone da conta"></p>
+            <p>Minhas compras <img class="icon" src="icons/icon-bag.svg" alt="Ícone de sacola"></p>
+        </div>
+    </header>
+
+    <!-- Barra de navegação -->
+    <nav>
+        <div id="nav-mobile">
+            <img id="menu-btn" class="icon" src="icons/icon-menu.svg" alt="Ícone de menu">
+            <div id="nav-search">
+                <img class="icon" src="icons/logo.svg" alt="Logo da marca">
+                <div class="search input-field" role="search">
+                    <input class="search-input input-component" type="text" placeholder="O que você procura?">
+                    <button class="search-btn input-component" type="button"><img src="icons/icon-search.svg" alt="Ícone de busca"></button>
+                </div>
+            </div>
+            <div id="nav-others">
+                <img class="icon" src="icons/icon-bag.svg" alt="Ícone de sacola">
+                <img class="icon" src="icons/icon-account.svg" alt="Ícone da conta">
+            </div>
+        </div>
+        <div id="nav-menu">
+            <div class="dropdown">
+                <button class="nav-item" type="button">Bebês
+                    <img class="drop-icon open-icon" src="icons/icon-open.svg" alt="Ícone de abrir abas">
+                    <img class="drop-icon close-icon hidden" src="icons/icon-close.svg" alt="Ícone de fechar abas">
+                </button>
+                <div class="dropitem hidden">
+                    <a href="#" class="nav-sub">Ver todos</a>
+                    <a href="#" class="nav-sub">Roupas</a>
+                    <a href="#" class="nav-sub">Calçados</a>
+                    <a href="#" class="nav-sub">Meias</a>
+                    <a href="#" class="nav-sub">Pijamas</a>
+                    <a href="#" class="nav-sub">Acessórios</a>
+                    <a href="#" class="nav-sub">Enxovais</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="nav-item" type="button">Crianças
+                    <img class="drop-icon open-icon" src="icons/icon-open.svg" alt="Ícone de abrir abas">
+                    <img class="drop-icon close-icon hidden" src="icons/icon-close.svg" alt="Ícone de fechar abas">
+                </button>
+                <div class="dropitem hidden">
+                    <a href="#" class="nav-sub">Ver todos</a>
+                    <a href="#" class="nav-sub">Roupas</a>
+                    <a href="#" class="nav-sub">Calçados</a>
+                    <a href="#" class="nav-sub">Meias</a>
+                    <a href="#" class="nav-sub">Pijamas</a>
+                    <a href="#" class="nav-sub">Acessórios</a>
+                    <a href="#" class="nav-sub">Conjuntos</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="nav-item" type="button">Gestantes
+                    <img class="drop-icon open-icon" src="icons/icon-open.svg" alt="Ícone de abrir abas">
+                    <img class="drop-icon close-icon hidden" src="icons/icon-close.svg" alt="Ícone de fechar abas">
+                </button>
+                <div class="dropitem hidden">
+                    <a href="#" class="nav-sub">Ver todos</a>
+                    <a href="#" class="nav-sub">Roupas</a>
+                    <a href="#" class="nav-sub">Pijamas</a>
+                    <a href="#" class="nav-sub">Lingerie</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Barra de pesquisa em telas menores-->
+    <div class="search input-field" role="search">
+        <input class="search-input input-component" type="text" placeholder="O que você procura?">
+        <button class="search-btn input-component" type="button"><img src="icons/icon-search.svg" alt="Ícone de busca"></button>
+    </div>
+
+    <!-- Conteúdo da página de produto -->
     <main>
         <div id="order-by">
             <img id="filter-icon" class="icon" src="icons/icon-filter.svg" alt="Ícone de filtros">
@@ -163,6 +249,43 @@
             </div>
         </section>
     </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <form id="footer-newsletter">
+            <label for="newsletter-email">Cadastre-se para receber novidades da loja</label>
+            <div id="newsletter-input" class="input-field">
+                <input type="email" id="newsletter-email" class="input-component" placeholder="Digite seu email">
+                <button id="newsletter-btn" class="input-component" type="button">Cadastrar</button>
+            </div>
+        </form>
+        <div id="footer-info" role="contentinfo">
+            <img id="footer-logo" src="icons/logo.svg" alt="Logo da marca">
+            <div id="footer-links">
+                <a href="#">Quem somos</a>
+                <a href="#">Trabalhe conosco</a>
+                <a href="#">Política de troca</a>
+            </div>
+            <div id="footer-customer">
+                <h1>Horário de Atendimento</h1>
+                <p>De Segunda a Sábado, das 8h às 18h.</p>
+                <p>0800 123 4567</p>
+            </div>
+            <div id="footer-social">
+                <h1>Siga-nos nas redes sociais</h1>
+                <a href="#"><img src="icons/facebook.png" alt="ìcone do Facebook"></a>
+                <a href="#"><img src="icons/twitter.png" alt="Ícone do Twitter"></a>
+                <a href="#"><img src="icons/linkedin.png" alt="Ícone do Linkedin"></a>
+            </div>
+            <div id="footer-copyright">
+                <hr>
+                <h1>&copy;Nome da Loja - Todos os direitos reservados</h1>
+                <p>NOME FANTASIA S.A | CNPJ: 00.000.000/0001-00</p>
+                <p>Rua 001, São Paulo/SP - 00000-000 | Telefone: 0800 123 4567</p>
+            </div>
+        </div>
+    </footer>
+    
     <script src="js/script.js"></script>
     <script>
         $("#filter-icon")[0].addEventListener("click", () => {
