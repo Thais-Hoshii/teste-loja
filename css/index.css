@@ -3,6 +3,7 @@
 /* Conteudo principal */
 #banner-main {
     position: relative;
+    margin-top: 2rem;
     width: 100%;
     background: url(../img/bebe1.jpg);
     background-size: 100%;

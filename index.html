@@ -294,21 +294,5 @@
     </footer>
     
     <script src="js/script.js"></script>
-    <script>
-        $("#menu-btn")[0].addEventListener("click", () => { return openTabs(".nav-item"); });
-        $(".nav-item").forEach( (x, i) => {
-            let n = $(".dropitem")[i];
-            x.addEventListener("click",  () => {
-                openTabs(".open-icon", i);
-                openTabs(".close-icon", i);
-                return openTabs(".dropitem", i);
-            });
-            x.addEventListener("focusout", () => {
-                if (!n.classList.contains("hidden")) {
-                    n.classList.add("hidden");
-                }
-            });
-        })
-    </script>
 </body>
 </html>
