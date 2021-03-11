@@ -115,10 +115,6 @@ nav {
     margin-right: .4rem;
 }
 
-#bag-quantity {
-    display: none;
-}
-
 #nav-menu {
     position: absolute;
     box-shadow: 1px 1px 1px var(--color-shadow);
