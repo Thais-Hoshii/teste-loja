@@ -1,5 +1,13 @@
 @import "variables.css";
 
+/* Opções de cores */
+:root {
+    --blue-option: #59afe0;
+    --green-option: #48c25d;
+    --pink-option: #e778ac;
+    --yellow-option: #dbc252;
+}
+
 main {
     padding: 1rem;
 }
@@ -51,7 +59,52 @@ main {
 }
 
 .options input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.option-label {
     margin: .3rem;
+    font-weight: 700;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background: var(--color-shadow);
+    font-size: 10pt;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.options input:checked + .option-label {
+    border: 1px solid black;
+}
+
+#color-options .option-label {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.pink {
+    background: var(--pink-option);
+}
+
+.blue {
+    background: var(--blue-option);
+}
+
+.green {
+    background: var(--green-option);
+}
+
+.yellow {
+    background: var(--yellow-option);
 }
 
 input[type=number] {
