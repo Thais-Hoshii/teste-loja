@@ -38,7 +38,6 @@
     }
     /* Menu de Navegação */
     #nav-mobile {
-        display: none;
         background: var(--color-light);
     }
 

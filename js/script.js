@@ -3,11 +3,18 @@
 function $(txt) { return document.querySelectorAll(txt); }
 
 // Quando iniciar a página ou mudar comprimento da tela, usar função
-window.onload = toggleNavBar;
 window.onresize = toggleNavBar;
+window.addEventListener("load", () => {
+    toggleNavBar();
+    if (window.innerWidth >= 600) {
+        $("#nav-mobile")[0].classList.add("hidden");
+    }
+});
 
 // Adicionando funções para eventos relacionados a menus dropdown
-$("#menu-btn")[0].addEventListener("click", () => { return openTabs(".nav-item"); });
+$("#menu-btn")[0].addEventListener("click", () => {
+    return openTabs("#nav-menu");
+});
 $(".nav-item").forEach( (x, i) => {
     let n = $(".dropitem")[i];
     x.addEventListener("click",  () => {
@@ -22,9 +29,32 @@ $(".nav-item").forEach( (x, i) => {
     });
 })
 
+// Faz com que a barra de navegação mude quando o viewport passa do cabeçalho
+let headerBottom = $("header")[0].offsetTop + $("header")[0].offsetHeight;
+
+window.addEventListener("scroll", () => {
+    let base = window.pageYOffset;
+    let mobile = $("#nav-mobile")[0];
+    let desktop = $("#nav-menu")[0];
+
+    if (window.innerWidth >= 600) {
+        if (base >= headerBottom) {
+            mobile.classList.remove("hidden");
+            if (!desktop.classList.contains("hidden")) {
+                desktop.classList.add("hidden");
+            }
+        } else {
+            mobile.classList.add("hidden");
+            if (desktop.classList.contains("hidden")) {
+                desktop.classList.remove("hidden");
+            }
+        }
+    }
+});
+
 // Função para ligar/desligar barra de navegação para telas com width >= 600px
 function toggleNavBar() {
-    let navItems = $(".nav-item");
+    let navItems = $("#nav-menu");
     let attr = "hidden";
 
     if (window.innerWidth >= 600) {
