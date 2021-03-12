@@ -212,7 +212,7 @@
             })
         })
 
-        thumbnails.forEach( (x, i) => {
+        thumbnails.forEach( x => {
             x.addEventListener("click", () => {
                 $("#product-img")[0].src = x.src;
             });
