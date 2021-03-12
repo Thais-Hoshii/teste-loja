@@ -102,11 +102,13 @@
         <!-- Banner principal -->
         <div id="banner-main" role="banner">
             <a href="catalogo.html">
-                <div id="banner-img">
-                </div>
-                <h2 id="banner-title">Linha para Bebês</h2>
+                <div id="banner-img"></div>
+                <h2 id="banner-title">Vestuário para Bebês</h2>
+                <div id="screen"></div>
             </a>
-            <p></p>
+        </div>
+        <div id="banner-dots">
+            <span class="dot current"></span><span class="dot"></span><span class="dot"></span>
         </div>
         <!-- Seção dos produtos mais vendidos -->
         <section id="mais-vendidos" class="section-products">
@@ -339,7 +341,14 @@
         function changeBanner(i) {
             setInterval( () => {
                 $("#banner-img")[0].style.backgroundImage = "url(./img/" + banners[i] + ")";
-                $("#banner-title")[0].innerText = "Linha para " + titles[i]
+                $("#banner-title")[0].innerText = "Vestuário para " + titles[i];
+                for (let j = 0; j <  banners.length; j++) {
+                    if (j === i) {
+                        $(".dot")[j].classList.add("current");
+                    } else {
+                        $(".dot")[j].classList.remove("current");
+                    }
+                }
                 i++;
                 if (i >= banners.length) {
                     i = 0

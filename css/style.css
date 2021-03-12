@@ -53,7 +53,12 @@ button {
 }
 
 .btn:hover {
-    opacity: 80%;
+    background: var(--color-hover);
+}
+
+.btn:active {
+    background: var(--color-pressed);
+    transform: translate(1px, 1px);
 }
 
 .price {
@@ -89,7 +94,7 @@ nav {
     width: 100%;
     top: 0;
     z-index: 1;
-    background: var(--color-primary);
+    background: var(--color-light);
     box-shadow: 0 2px 1px var(--color-shadow);
 }
 

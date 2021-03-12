@@ -46,18 +46,18 @@ function checkViewportTop() {
     let base = window.pageYOffset;
     let mobile = $("#nav-mobile")[0];
     let desktop = $("#nav-menu")[0];
-    let attr = "hidden";
+    let c = "hidden";
 
     if (window.innerWidth >= 600) {
         if (base >= headerBottom) {
-            mobile.classList.remove(attr);
-            if (!desktop.classList.contains(attr)) {
-                desktop.classList.add(attr);
+            mobile.classList.remove(c);
+            if (!desktop.classList.contains(c)) {
+                desktop.classList.add(c);
             }
         } else {
-            mobile.classList.add(attr);
-            if (desktop.classList.contains(attr)) {
-                desktop.classList.remove(attr);
+            mobile.classList.add(c);
+            if (desktop.classList.contains(c)) {
+                desktop.classList.remove(c);
             }
         }
     }
@@ -66,18 +66,18 @@ function checkViewportTop() {
 // Função para ligar/desligar barra de navegação para telas com width >= 600px
 function checkWidth() {
     let navItems = $("#nav-menu");
-    let attr = "hidden";
+    let c = "hidden";
 
     if (window.innerWidth >= 600) {
         navItems.forEach ( x => {
-            if (x.classList.contains(attr)) {
-                x.classList.remove(attr);
+            if (x.classList.contains(c)) {
+                x.classList.remove(c);
             }
         })
     } else {
         navItems.forEach ( x => {
-            if (!x.classList.contains(attr)) {
-                x.classList.add(attr);
+            if (!x.classList.contains(c)) {
+                x.classList.add(c);
             }
         })
     }

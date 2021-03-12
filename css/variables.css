@@ -3,9 +3,11 @@
 :root {
     --color-primary: #bed9eb;
     --color-emphasis: #e97f29;
+    --color-hover:  #ec9f46;
+    --color-pressed: #e24e33;
     --color-light: #fefefe;
     --color-dark: #435f8a;
     --color-bg: #eef4f7;
     --color-font: #313131;
-    --color-shadow: #bdb3a2;
+    --color-shadow: #d6d3cd;
 }

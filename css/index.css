@@ -3,9 +3,9 @@
 /* Conteudo principal */
 #banner-main {
     position: relative;
-    margin-top: 2rem;
+    margin: 2rem 0 .8rem;
     width: 100%;
-    background: var(--color-emphasis);
+    background-color: var(--color-emphasis);
 }
 
 #banner-img {
@@ -34,11 +34,21 @@
     text-shadow: 0 0 7px var(--color-font);
 }
 
-#banner-main p {
-    padding-top: 1rem;
-    font-size: 10pt;
+#banner-dots {
     text-align: center;
-    background: var(--color-bg)
+}
+
+.dot {
+    display: inline-block;
+    margin: 0 1rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid var(--color-font);
+}
+
+.current {
+    background: var(--color-font);
 }
 
 .section-products {
@@ -58,9 +68,6 @@
     overflow: scroll;
     margin: 0 2rem;
 }
-
-/* Animação */
-
 
 @media only screen and (min-width: 600px) {
     #banner-main h2 {
