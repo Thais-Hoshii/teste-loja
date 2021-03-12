@@ -1,7 +1,7 @@
 @import "variables.css";
 
 /* Conteudo principal */
-#banner-main {
+#banner {
     position: relative;
     margin: 2rem 0 .8rem;
     width: 100%;
@@ -19,8 +19,10 @@
     object-fit: cover;
     box-sizing: border-box;
     background-size: 100%;
-    background-image: url(../img/bebe1.jpg);
+    background-image: url(../img/bebe.jpg);
     background-position: 50% 50%;
+    filter: brightness(100%);
+    transition: filter .4s ease-in;
 }
 
 #banner-title {
@@ -70,7 +72,7 @@
 }
 
 @media only screen and (min-width: 600px) {
-    #banner-main h2 {
+    #banner h2 {
         font-size: 26pt;
     }
 

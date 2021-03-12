@@ -1,9 +1,8 @@
 "use strict"
 
-let headerBottom = $("header")[0].offsetTop + $("header")[0].offsetHeight;
-
-// Atalho para selecionar um conjunto de elementos
+// Atalhos para selecionar elementos
 function $(txt) { return document.querySelectorAll(txt); }
+
 
 // Quando iniciar a página ou mudar comprimento da tela, usar função
 window.onresize = checkWidth;
@@ -42,6 +41,8 @@ window.addEventListener("scroll", () => { return checkViewportTop() });
 
 
 // Função para checar o topo da tela e se passar do cabeçalho, mudar barra de navegação
+let headerBottom = $("header")[0].offsetTop + $("header")[0].offsetHeight;
+
 function checkViewportTop() {
     let base = window.pageYOffset;
     let mobile = $("#nav-mobile")[0];

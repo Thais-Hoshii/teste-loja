@@ -30,7 +30,7 @@ hr {
     height: 1px;
     width: 75%;
     margin: .7rem auto;
-    background: linear-gradient(to right, rgba(0,0,0,0), var(--color-shadow), rgba(0,0,0,0));
+    background: linear-gradient(to right, rgba(0,0,0,0), var(--color-dark), rgba(0,0,0,0));
 }
 
 button {
