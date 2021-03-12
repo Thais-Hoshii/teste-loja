@@ -5,7 +5,7 @@
     position: relative;
     margin: 2rem 0 .8rem;
     width: 100%;
-    background-color: var(--color-emphasis);
+    background-color: var(--color-hover);
 }
 
 #banner-img {
