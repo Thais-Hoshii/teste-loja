@@ -202,12 +202,20 @@
     
     <script src="js/script.js"></script>
     <script>
+        let thumbnails = $(".thumbnail");
+
         $(".droptext").forEach( (x, i) => {
             x.addEventListener("click", () => {
                 openTabs(".droptext .open-icon", i);
                 openTabs(".droptext .close-icon", i);
                 openTabs(".droptext p", i);
             })
+        })
+
+        thumbnails.forEach( (x, i) => {
+            x.addEventListener("click", () => {
+                $("#product-img")[0].src = x.src;
+            });
         })
     </script>
 </body>
